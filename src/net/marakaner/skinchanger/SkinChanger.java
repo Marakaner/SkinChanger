@@ -60,7 +60,7 @@ public class SkinChanger extends JavaPlugin {
     }
 
     private void registerMessages() {
-        Map<String, String> messages = new HashMap();
+        Map<String, String> messages = new HashMap<>();
 
         FileConfiguration cfg = getConfig();
 
@@ -101,6 +101,7 @@ public class SkinChanger extends JavaPlugin {
         FileConfiguration cfg = getConfig();
 
         prefix = ChatColor.translateAlternateColorCodes('&', cfg.getString("Prefix")) + " ";
+
 
         if (cfg.getBoolean("MySQL.Enabled")) {
             sqlManager = new SQLManager(cfg.getString("MySQL.Host"),

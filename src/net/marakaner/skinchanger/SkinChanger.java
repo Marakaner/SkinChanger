@@ -38,6 +38,7 @@ public class SkinChanger extends JavaPlugin {
 
         loadConfig();
 
+
         if(getConfig().getBoolean("MySQL.Enabled")) {
             userManager = new UserManager(this.sqlManager);
             skinManager = new SkinManager(this.sqlManager);

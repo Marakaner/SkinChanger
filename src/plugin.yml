@@ -1,0 +1,9 @@
+name: SkinChanger
+version: 1.0
+author: Marakaner | Alex
+main: net.marakaner.skinchanger.SkinChanger
+
+commands:
+  skin:
+  skinreset:
+  skinset:

@@ -1,0 +1,31 @@
+# Trage hier die Datenbankverbindung an, damit das Plugin verwendet werden kann.
+MySQL:
+  Enabled: false
+  Host: "localhost"
+  Port: 3306
+  User: "root"
+  Database: "SkinChanger"
+  Password: "Passwort"
+
+# Der UpdateAnnouncer benachrichtigt dich über neue Updates.
+# Die Updates musst du dir jedoch selbst über das Webinterface herunterladen.
+# Wenn du diese Option nicht nutzen möchtest, ändere den Wert auf 'false'
+UpdateAnnouncer: true
+
+
+# Hier kannst du den Prefix, der vor jeder Nachricht steht, verändern.
+Prefix: "&8[&5SkinChanger&8]"
+
+# Hier kannst du alle Nachrichten editieren
+
+Messages:
+  skin_set: "&7Du hast nun den Skin von %NAME%."
+  skin_reset: "&7Du hast nun wieder deinen alten Skin."
+  skin_set_other: "&7Du hast dem Spieler %PLAYER% den Skin von %NAME% gegeben."
+  skin_reset_other: "&7Du hast dem Spieler %PLAYER% seinen alten Skin gesetzt."
+  skin_not_available: "&cDer Spieler %NAME% hat keinen Skin!"
+  skin_not_changed_other: "&cDer Spieler %PLAYER% hat seinen Skin nicht gewechselt."
+  skin_not_changed: "&cDu hast deinen Skin nicht gewechselt."
+  skin_loaded: "&7Dein alter Skin wurde geladen!"
+  no_permission: "&cDu hast keine Berechtigungen für den Befehl: /%COMMAND%"
+  no_command: "&cDieser Befehl existiert nicht."

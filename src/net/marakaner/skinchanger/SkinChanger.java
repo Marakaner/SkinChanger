@@ -9,14 +9,11 @@ import net.marakaner.skinchanger.skin.SkinManager;
 import net.marakaner.skinchanger.sql.SQLManager;
 import net.marakaner.skinchanger.user.UserManager;
 import net.marakaner.skinchanger.utils.MessageUtil;
-import net.marakaner.skinchanger.utils.UpdateUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.IOException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -78,6 +75,7 @@ public class SkinChanger extends JavaPlugin {
         } catch (Exception e) {
             Bukkit.getConsoleSender().sendMessage("§cEine Nachricht konnte nicht geladen werde. Lösche die 'config.yml' und starte den Server neu um diesen Fehler zu beheben!");
         }
+
 
         MessageUtil.registerMessages(messages);
     }
